@@ -1,7 +1,23 @@
 {
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.6.0"
-      }
-    }
+    "functions":{
+      "api/*.php": { "runtime": "vercel-php@0.6.0" },
+    },
+	
+	"routes": [
+        { "src": "/(.*)",  "dest": "/api/banmorong.html" },
+		{ "src": "/(.*)",  "dest": "/api/dangnhap.php" },
+		{ "src": "/(.*)",  "dest": "/api/dangxuat.php" },
+		{ "src": "/(.*)",  "dest": "/api/index.php" },
+		{ "src": "/(.*)",  "dest": "/api/ketnoi.php" },
+		{ "src": "/(.*)",  "dest": "/api/mod.html" },
+		{ "src": "/css/dangnhap.css", "dest": "/css/dangnhap.css" },
+		{ "src": "/css/index.css", "dest": "/css/index.css" },
+		{ "src": "/css/style1.css", "dest": "/css/style1.css" },
+		{ "src": "/css/style2.css", "dest": "/css/style2.css" },
+		{ "src": "/css/style3.css", "dest": "/css/style3.css" },
+		{ "src": "/js/dangnhap.js", "dest": "/js/dangnhap.js" },
+		{ "src": "/js/darkmode.js", "dest": "/js/darkmode.js" },
+		{ "src": "/js/Gradient.js", "dest": "/js/Gradient.js" }
+    ],
+    
   }
