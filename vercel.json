@@ -1,6 +1,6 @@
 {
     "functions":{
-      "api/*.php": { "runtime": "vercel-php@0.6.0" },
+      "api/*.php": { "runtime": "vercel-php@0.6.0" }
     },
 	
 	"routes": [
@@ -18,6 +18,5 @@
 		{ "src": "/js/dangnhap.js", "dest": "/js/dangnhap.js" },
 		{ "src": "/js/darkmode.js", "dest": "/js/darkmode.js" },
 		{ "src": "/js/Gradient.js", "dest": "/js/Gradient.js" }
-    ],
-    
+	]
   }
