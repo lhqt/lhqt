@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #3c4257;
+	font-family: segoe ui;
+	user-select: none;
+	word-wrap: break-word;
+}
+body{
+	overflow: hidden;
+}
+html {
+	scroll-behavior: smooth;
+}
+.benngoai{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+	width: 33.1rem;
+	margin: 3.7rem auto 1.3rem;
+}
+.logo img{
+	width: 21%;
+	opacity: 0.9;
+}
+.dark .footer img{
+	width: 96%;
+}
+h3{
+	font-size: 24px;
+}
+.dark h3{
+	font-size: 24px;
+}
+.bentrong {
+    z-index: 10;
+    position: relative;
+}
+.chỗnhập{
+	padding-top: 30px;
+	gap: 12px;
+	display: grid;
+}
+.chữ{
+	color: #3c4257;
+	vertical-align: middle;
+    word-break: normal;
+	width: 100%;
+	min-height: 44px;
+	padding: 0 16px;
+    border: 0;
+    outline: 0;
+	border-radius: 4px;
+	transition: 0.2s;
+}
+.box{
+	box-shadow: rgb(60 66 87 / 16%) 0px 0px 0px 1px;
+	width: 100%;
+	min-height: 44px;
+	border-radius: 4px;
+	margin-bottom: 24px;
+}
+.chữ:focus{
+	box-shadow:rgba(58, 151, 212, 0.36) 0px 0px 0px 4px;
+}
+.pass{
+	display: flex;
+	justify-content: space-between;
+}
+p, a{
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+}
+a{
+	color: #5469d4;
+	transition: 0.3s;
+}
+a:hover{
+	color: #3c4257;
+}
+.dark a:hover{
+	color: #7084e4;
+}
+.nhớ{
+	display: flex;
+	padding-top: 10px;
+}
+.nhớ p{
+	position: relative;
+	left: -5px;
+}
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* Styling checkbox */
+	width: 16px;
+	height: 16px;
+	box-shadow: rgb(60 66 87 / 16%) 0px 0px 0px 1px;
+    border-radius: 4px;
+	background-color: transparent;
+	mix-blend-mode: color;
+	transform: translateY(2.6px);
+  }
+input[type="checkbox"]:checked {
+	background-color: #635bff;
+  }
+.dark input[type="checkbox"] {
+	background-color: #292929;
+	mix-blend-mode: unset;
+	box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 0px 1px;
+  }
+.dark input[type="checkbox"]:checked {
+	background-color: #635bff;
+	mix-blend-mode: color;
+  }
+  
+.material-icons-round{
+	font-size: 13px;
+	font-weight: 900;
+	position: relative;
+	left: -14.5px;
+	top:4px;
+	color: #fff;
+	z-index: -1;
+}
+button{
+	width: 100%;
+    min-height: 44px;
+    border-radius: 4px;
+    margin-top: 31px;
+    background-color: rgb(99, 91, 255);
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: 500;
+    outline: 0;
+    cursor: pointer;
+	transition: 0.2s;
+}
+button:hover{
+	background-color: rgb(84, 75, 253);
+}
+.khung{
+	padding: 56px 68px;
+	box-shadow: rgb(60 66 87 / 8%) 1px 7px 37px 12px, rgb(0 0 0 / 12%) 0px 5px 15px 0px;
+	width: 34rem;
+	height: 520px;
+	border-radius: 4px;
+	background: white;
+}
+.dark .khung{
+	background: #ffffff29;
+}
+
+.footer{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	opacity: 0.9;
+	bottom: -7.3vw;
+	z-index: -1;
+	transition: 0.2s !important;
+}
+.footer img{
+	width: 90%;
+	transition: 0.2s;
+	opacity: 0;
+} 
+.dark{
+	background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 10%, rgb(0, 0, 0) 40%);
+	height: 100vh;
+}
+.f2{
+	background-image: url(/181A020029/img/30.png);
+	background-size: contain;
+	background-position: bottom;
+    background-repeat: no-repeat;
+	transition: 0.2s !important;
+}
+.dark .footer{
+	z-index: 0;
+}
+.dark .f2{
+	background-image: url(/181A020029/img/34.png);
+	transform: translateY(-52px);
+}
+.dark :not(.chữ){
+	color: #ffffff;
+}
+.DarkMode span{
+	opacity:0;
+	z-index:1;
+	transition: 0.2s;
+	cursor: pointer;
+	font-size: 2rem !important;
+}
+.dark{
+	background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(31,31,31,1) 10%, rgb(0, 0, 0) 40%);
+	;
+}
+
+.dark *{
+	color: #fcf9f9;
+}
+/* .dark .material-icons{
+  color: #222121 !important;
+} */
+
+.☀️{
+	position: absolute;
+}
+
+.🌙.✔️ span{
+	opacity:1;
+	animation-name: spin;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	z-index:0
+}
+.☀️.✔️ span{
+	opacity:1;
+	animation-name: spin1;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+	z-index:0
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+@keyframes spin1 {
+  from {
+      transform:rotate(180deg);
+  }
+  to {
+      transform:rotate(0deg);
+  }
+}
+.khúctrên{
+	display: flex;
+}
+.DarkMode{
+	position: relative;
+    top: 4rem;
+    right: 0.3rem;
+}
